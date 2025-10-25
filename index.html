@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Chaudhary</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2094365817974499');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2094365817974499&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Background Image + Overlay */
+  .background {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.imgur.com/3oaQj2i.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+
+  .content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+
+  h2 {
+    margin: 5px 0;
+    font-size: 22px;
+  }
+
+  h3 {
+    margin: 5px 0 20px;
+    font-size: 24px;
+  }
+
+  .telegram-btn {
+    background-color: #DC2626;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    margin-top: 15px;
+    display: inline-block;
+  }
+
+  .telegram-btn:hover {
+    background-color: #b91c1c;
+    transform: scale(1.05);
+  }
+
+  .countdown-container {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .countdown {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .join-link {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>🔥 SAHIL CHAUDHARY 🔥</h1>
+    <h2>CRICKET PREDICTION</h2>
+    <h3>🔥 BADSHAH 🔥</h3>
+
+    <!-- Main Telegram Button -->
+    <a href="https://telegram.me/+c7kKoSNxr7tkNzg1" class="telegram-btn">
+      Join The Original Telegram Channel
+    </a>
+
+    <div class="countdown-container">
+      <p>FREE JOINING ENDS IN...</p>
+      <div id="countdown" class="countdown">60</div>
+    </div>
+
+    <a href="https://telegram.me/+c7kKoSNxr7tkNzg1" class="join-link">Join Original Telegram</a>
+  </div>
+
+<script>
+  // Countdown Timer with Redirect
+  let counter = 60;
+  const countdown = document.getElementById("countdown");
+  const telegramLink = "https://telegram.me/+c7kKoSNxr7tkNzg1";
+
+  const timer = setInterval(() => {
+    counter--;
+    countdown.textContent = counter;
+    if (counter <= 0) {
+      clearInterval(timer);
+      countdown.textContent = "0";
+      // Redirect to Telegram channel
+      window.location.href = telegramLink;
+    }
+  }, 1000);
+</script>
+</body>
+</html>
